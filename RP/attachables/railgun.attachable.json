@@ -1,0 +1,38 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:attachable": {
+    "description": {
+        "identifier": "dap:railgun",
+        "materials": { "default": "entity_alphatest" },
+        "textures": { "default": "textures/items/railgun" },
+        "geometry": { "default": "geometry.railgun" },
+        "animations": {
+            "hold_first_person": "animation.railgun.hold_first_person",
+            "hider_hold_first_person": "animation.railgun.hider_hold_first_person",
+            "hider_charge_first_person": "animation.railgun.hider_charge_first_person",
+            "hold_third_person": "animation.railgun.hold_third_person",
+            "hider_holder_third_person": "animation.railgun.hider_hold_third_person"
+        },
+        "scripts": {
+            "animate": [
+              {
+                "hider_charge_first_person": "c.is_first_person && (c.owning_entity->q.has_property('dap:team_id') ? (c.owning_entity->q.property('dap:team_id')==2) : 0) && c.owning_entity->q.is_using_item"
+              },
+              {
+                "hider_hold_first_person": "c.is_first_person && (c.owning_entity->q.has_property('dap:team_id') ? (c.owning_entity->q.property('dap:team_id')==2) : 0)"
+              },
+              {
+                "hold_first_person": "c.is_first_person == 1.0"
+              },
+              {
+                "hider_holder_third_person": "c.is_first_person == 0.0 && (c.owning_entity->q.has_property('dap:team_id') ? (c.owning_entity->q.property('dap:team_id')==2) : 0)"
+              },
+              {
+                "hold_third_person": "c.is_first_person == 0.0"
+              }
+            ]         
+        },
+      "render_controllers": [ "controller.render.railgun" ]
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+    "format_version": "1.21.100",
+    "minecraft:item": {
+        "description": {
+            "identifier": "dap:railgun",
+            "menu_category": {
+                "category": "equipment"
+            }
+        },
+        "components": {
+            "minecraft:icon": "dap:railgun",
+            "minecraft:use_animation": "bow",
+            "minecraft:max_stack_size": 1,
+            "minecraft:durability": {
+                "max_durability": 0
+            },
+            "minecraft:use_modifiers": {
+                "emit_vibrations": true,
+                "movement_modifier": 0.2,
+                "use_duration": 25000
+            },
+            "minecraft:hand_equipped": true
+        }
+    }
+}

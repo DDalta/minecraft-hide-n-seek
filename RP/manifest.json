@@ -1,0 +1,20 @@
+{
+    "format_version": 2,
+    "header": {
+        "name": "pack.name",
+        "description": "pack.description",
+        "uuid": "667813c6-7703-4c89-bedc-ad5d53ad4ee2",
+        "version": [1, 0, 0],
+        "min_engine_version": [1, 21, 120]
+    },
+    "modules": [
+        {
+            "type": "resources",
+            "uuid": "2d631a36-4432-4f61-82b1-6843e7dce879",
+            "version": [1, 0, 0]
+        }
+    ],
+    "metadata": {
+        "product_type": "addon"
+    }
+}

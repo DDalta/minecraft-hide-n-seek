@@ -1,0 +1,14 @@
+{
+    "format_version": "1.10.0",
+    "render_controllers": {
+        "controller.render.railgun": {
+            "materials": [
+                {
+                    "*": "material.default"
+                }
+            ],
+            "geometry": "geometry.default",
+            "textures": ["texture.default"]
+        }
+    }
+}

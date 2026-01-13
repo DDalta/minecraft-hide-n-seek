@@ -1,0 +1,14 @@
+{
+  "format_version": "1.21.130",
+  "minecraft:item": {
+    "description": {
+        "identifier": "dap:debug_stick",
+        "menu_category": {
+            "category": "items"
+        }
+    },
+    "components": {
+        "minecraft:icon": "stick"
+    }
+  }
+}

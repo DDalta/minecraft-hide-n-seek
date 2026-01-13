@@ -1,0 +1,21 @@
+{
+  "format_version": "1.21.130",
+  "minecraft:item": {
+    "description": {
+      "identifier": "dap:rocket_ammo_medium",
+      "menu_category": {
+        "category": "items"
+      }
+    },
+    "components": {
+      "minecraft:icon": "dap:rocket_ammo_medium",
+      "minecraft:projectile": {
+        "projectile_entity": "dap:rocket_projectile_medium"
+      },
+      "minecraft:cooldown": {
+        "category": "dap:rocket",
+        "duration": 0.35
+      }
+    }
+  }
+}

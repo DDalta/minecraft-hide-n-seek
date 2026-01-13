@@ -1,0 +1,58 @@
+
+
+{
+	"format_version": "1.10.0",
+	"particle_effect": {
+		"description": {
+			"identifier": "dap:railgun_tube_particle",
+			"basic_render_parameters": {
+				"material": "particles_blend",
+				"texture": "textures/particle/railgun_beam"
+			}
+		},
+		"events": {
+			"event": {
+				"expression": "v.time = v.time + 1;"
+			}
+		},
+		"components": {
+			"minecraft:emitter_initialization": {
+				"creation_expression": "v.time = 0;"
+			},
+			"minecraft:emitter_rate_instant": {
+				"num_particles": "v.amount"
+			},
+			"minecraft:emitter_lifetime_once": {
+				"active_time": 0.1
+			},
+			"minecraft:emitter_shape_point": {
+				"offset": ["v.end.x * (v.time/v.amount)", "v.end.y * (v.time/v.amount)", "v.end.z * (v.time/v.amount)"]
+			},
+			"minecraft:particle_lifetime_expression": {
+				"max_lifetime": 3
+			},
+			"minecraft:particle_lifetime_events": {
+				"creation_event": "event"
+			},
+			"minecraft:particle_appearance_billboard": {
+				"size": [0.25, 0.25],
+				"facing_camera_mode": "rotate_xyz",
+				"uv": {
+					"texture_width": 12,
+					"texture_height": 96,
+					"flipbook": {
+						"base_UV": [0, 36],
+						"size_UV": [12, 12],
+						"step_UV": [0, 12],
+						"frames_per_second": 1,
+						"max_frame": 5,
+						"stretch_to_lifetime": true
+					}
+				}
+			},
+            "minecraft:particle_appearance_tinting": {
+				"color": ["math.lerp(v.color_start.x, v.color_end.x, v.particle_age / v.particle_lifetime) / 255", "math.lerp(v.color_start.y, v.color_end.y, v.particle_age / v.particle_lifetime) / 255", "math.lerp(v.color_start.z, v.color_end.z, v.particle_age / v.particle_lifetime) / 255", "1 - (v.particle_age / v.particle_lifetime)"]
+			}
+		}
+	}
+}

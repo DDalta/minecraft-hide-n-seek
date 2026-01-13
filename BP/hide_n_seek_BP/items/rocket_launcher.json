@@ -1,0 +1,46 @@
+{
+    "format_version": "1.21.100",
+    "minecraft:item": {
+        "description": {
+            "identifier": "dap:rocket_launcher",
+            "menu_category": {
+                "category": "equipment"
+            }
+        },
+        "components": {
+            "minecraft:icon": "dap:rocket_launcher",
+            "minecraft:shooter": {
+                "ammunition": [
+                    {
+                        "item": "dap:rocket_ammo_small",
+                        "search_inventory": true,
+                        "use_in_creative": true
+                    },
+                    {
+                        "item": "dap:rocket_ammo_medium",
+                        "search_inventory": true,
+                        "use_in_creative": true
+                    },
+                    {
+                        "item": "dap:rocket_ammo_large",
+                        "search_inventory": true,
+                        "use_in_creative": true
+                    }
+                ]
+            },
+            "minecraft:use_modifiers": {
+                "use_duration": 0.1
+            },
+            "minecraft:cooldown": {
+                "category": "dap:rocket",
+                "duration": 0.45
+            },
+            "minecraft:enchantable": {
+                "slot": "bow",
+                "value": 1
+            },
+            "minecraft:max_stack_size": 1,
+            "minecraft:hand_equipped": true
+        }
+    }
+}

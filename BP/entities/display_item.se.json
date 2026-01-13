@@ -1,0 +1,80 @@
+{
+    "format_version": "1.21.90",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "dap:display_item",
+            "is_spawnable": true,
+            "is_summonable": true,
+            "is_experimental": false
+        },
+        "components": {
+            "minecraft:physics": {},
+            "minecraft:collision_box": { "width": 0.8, "height": 0.8 },
+            "minecraft:persistent": {},
+            "minecraft:nameable": {
+                "allow_name_tag_renaming": false,
+                "always_show": false
+            },
+            "minecraft:pushable": {
+                "is_pushable": false,
+                "is_pushable_by_piston": false
+            },
+            "minecraft:water_movement": {
+                "drag_factor": 0.0
+            },
+            "minecraft:damage_sensor": {
+                "triggers": {
+                    "cause": "all",
+                    "deals_damage": "no"
+                }
+            },
+            "minecraft:interact": {
+                "interactions": [
+                    {
+                        "cooldown": 2,
+                        "swing": true,
+                        "on_interact": {
+                            "filters": {
+                                "all_of": [
+                                    {
+                                        "test": "has_tag",
+                                        "subject": "other",
+                                        "value": "hider"
+                                    }
+                                ]
+                            }
+                        }                 
+                    }
+                ]
+            },
+            "minecraft:entity_sensor": {
+                "find_players_only": true,
+                "subsensors": [
+                    {
+                        "event": "dap:player_detected",
+                        "cooldown": 8,
+                        "range": [0.9, 0.9],
+                        "maximum_count": 1,
+                        "event_filters": {
+                            "all_of": [
+                                {
+                                    "test": "has_tag",
+                                    "subject": "other",
+                                    "value": "hider"
+                                }
+                            ]
+                        }
+
+                    }
+                ]
+            }
+        },
+        "events": {
+            "dap:player_detected": {
+                "queue_command": {
+                    "command": "say right click to pick me up"
+                }
+            }
+        }
+    }
+}

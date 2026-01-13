@@ -1,0 +1,21 @@
+{
+	"resource_pack_name": "Hide-n-Seek Game",
+	"texture_name": "atlas.items",
+	"texture_data": { 
+		"dap:rocket_launcher": {
+			"textures": "textures/items/rocket_launcher"
+		},
+		"dap:railgun": {
+			"textures": "textures/items/railgun"
+		},
+		"dap:rocket_ammo_small": {
+			"textures": "textures/items/rocket_ammo_small"
+		},
+		"dap:rocket_ammo_medium": {
+			"textures": "textures/items/rocket_ammo_medium"
+		},
+		"dap:rocket_ammo_large": {
+			"textures": "textures/items/rocket_ammo_large"
+		}
+    }
+}

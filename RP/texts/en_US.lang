@@ -1,0 +1,18 @@
+pack.name=Hide-n-Seek Game Resource Pack
+pack.description=a horrible game i made
+
+item.dap:rocket_ammo_small=Small Rocket
+item.dap:rocket_ammo_medium=Medium Rocket
+item.dap:rocket_ammo_large=Large Rocket
+item.dap:rocket_launcher=Rocket Launcher
+item.spawn_egg.entity.dap:display_item.name=Display Item
+item.dap:invisibility_ability=Invisibility Ability
+item.dap:dash_ability=Dash Ability
+item.dap:sound_player=Sound Player
+item.dap:railgun=Rail Gun
+item.dap:player_locator=Player Locator
+item.dap:debug_stick=Debug Stick
+
+entity.dap:rocket_projectile.name=Rocket Projectile
+
+tile.dap:workbench.name=Work Bench

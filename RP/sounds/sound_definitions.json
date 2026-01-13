@@ -1,0 +1,57 @@
+{
+	"format_version": "1.20.20",
+	"sound_definitions": {
+		"hider.fart": {
+			"category": "neutral",
+			"sounds": ["sounds/fart"]
+		},
+		"hider.laugh": {
+			"category": "neutral",
+			"sounds": ["sounds/cat_laugh"]
+		},
+		"hider.boowomp": {
+			"category": "neutral",
+			"sounds": ["sounds/boowomp"]
+		},
+		"hider.bruh": {
+			"category": "neutral",
+			"sounds": ["sounds/bruh"]
+		},
+		"hider.knock": {
+			"category": "neutral",
+			"sounds": ["sounds/door_knock"]
+		},
+		"hider.fnaf_har": {
+			"category": "neutral",
+			"sounds": ["sounds/fnaf_harhar"]
+		},
+		"hider.frog_laugh": {
+			"category": "neutral",
+			"sounds": ["sounds/frog_laugh"]
+		},
+		"hider.getout": {
+			"category": "neutral",
+			"sounds": ["sounds/get_out"]
+		},
+		"hider.oof": {
+			"category": "neutral",
+			"sounds": ["sounds/roblox_oof"]
+		},
+		"hider.camera": {
+			"category": "neutral",
+			"sounds": ["sounds/camera"]
+		},
+		"hider.metal_pipe": {
+			"category": "neutral",
+			"sounds": ["sounds/metal_pipe"]
+		},
+		"hider.rizz": {
+			"category": "neutral",
+			"sounds": ["sounds/rizz"]
+		},
+		"hider.vine_boom": {
+			"category": "neutral",
+			"sounds": ["sounds/vine_boom"]
+		}
+	}
+}
